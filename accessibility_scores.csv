@@ -1,0 +1,14 @@
+rule,missing,empty,diff_lang
+button-name,❌ Fail,✅ Pass,✅ Pass
+document-title,✅ Pass,❌ Fail,✅ Pass
+frame-title,❌ Fail,❌ Fail,✅ Pass
+image-alt,❌ Fail,✅ Pass,✅ Pass
+input-button-name,✅ Pass,❌ Fail,✅ Pass
+input-image-alt,❌ Fail,❌ Fail,✅ Pass
+label,✅ Pass,✅ Pass,✅ Pass
+link-name,❌ Fail,❌ Fail,✅ Pass
+object-alt,❌ Fail,❌ Fail,✅ Pass
+select-name,❌ Fail,❌ Fail,✅ Pass
+summary-name,✅ Pass,✅ Pass,✅ Pass
+svg-img-alt,✅ Pass,✅ Pass,✅ Pass
+video-caption,✅ Pass,✅ Pass,✅ Pass

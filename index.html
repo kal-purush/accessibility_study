@@ -3,104 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>বাংলাদেশ সম্পর্কে পৃষ্ঠা</title>
+    <title>Accessibility Test Pages</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            line-height: 1.6;
-            background-color: #f9f9f9;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            margin: 20px 0;
-        }
-        form {
-            margin-top: 20px;
-            background-color: #ffffff;
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 40px; 
             padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        input, textarea, button {
-            margin: 10px 0;
+        h1 { 
+            color: #333; 
+            text-align: center;
+        }
+        p { 
+            text-align: center; 
+            font-size: 1.2em;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .column {
+            width: 30%;
+            min-width: 280px;
             padding: 10px;
-            width: 80%;
-            max-width: 400px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
         }
-        button {
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            cursor: pointer;
+        h2 {
+            font-size: 1.2em;
+            margin-top: 20px;
+            color: #0056b3;
         }
-        button:hover {
-            background-color: #0056b3;
+        ul { 
+            list-style-type: none; 
+            padding: 0; 
         }
-        .content {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        li { 
+            margin: 8px 0; 
+        }
+        a { 
+            text-decoration: none; 
+            color: #007BFF; 
+            font-weight: bold; 
+        }
+        a:hover { 
+            color: #0056b3; 
+        }
+        .separator {
+            margin: 15px 0;
+            font-size: 0.9em;
+            color: #888;
         }
     </style>
 </head>
 <body>
-    <header role="banner">
-        <h1>বাংলাদেশ সম্পর্কে</h1>
-    </header>
 
-    <main role="main">
-        <section class="content" aria-labelledby="about-bangladesh">
-            <h2 id="about-bangladesh">বাংলাদেশের প্রাকৃতিক সৌন্দর্য</h2>
-            <p>বাংলাদেশ দক্ষিণ এশিয়ার একটি ছোট এবং ঘনবসতিপূর্ণ দেশ। এটি বঙ্গোপসাগরের উপকূলে অবস্থিত এবং চারপাশে ভারতের সীমানায় আবদ্ধ। পূর্ব দিকে মিয়ানমার রয়েছে। প্রাকৃতিক সৌন্দর্য, ঐতিহ্য, এবং সাংস্কৃতিক বৈচিত্র্যের জন্য বাংলাদেশ পরিচিত।</p>
-            <p>সিলেটের চা বাগান এবং সুন্দরবন বাংলাদেশকে প্রকৃতির আশীর্বাদ প্রদান করেছে।</p>
-        </section>
+    <h1>Accessibility Test Pages</h1>
+    <p>Click on the links below to view the different accessibility test cases.</p>
 
-        <section aria-labelledby="about-dhaka">
-            <h2 id="about-dhaka">ঢাকা: বাংলাদেশের রাজধানী</h2>
-            <p>ঢাকা, বাংলাদেশের রাজধানী, একটি জীবন্ত এবং ব্যস্ত শহর। এটি দেশের অর্থনৈতিক, রাজনৈতিক এবং সাংস্কৃতিক কেন্দ্র।</p>
-        </section>
+    <div class="container">
+        <!-- Column 1 -->
+        <div class="column">
+            <h2>Button & Form</h2>
+            <ul>
+                <li><a href="generated_html_pages/button-name_missing.html">🚫 Button Missing</a></li>
+                <li><a href="generated_html_pages/button-name_empty.html">⚠️ Button Empty</a></li>
+                <li><a href="generated_html_pages/button-name_diff_lang.html">🌍 Button Different Language</a></li>
+                <li class="separator">----------------------------------------</li>
+                <li><a href="generated_html_pages/input-button-name_missing.html">🚫 Input Button Missing</a></li>
+                <li><a href="generated_html_pages/input-button-name_empty.html">⚠️ Input Button Empty</a></li>
+                <li><a href="generated_html_pages/input-button-name_diff_lang.html">🌍 Input Button Different Language</a></li>
+                <li class="separator">----------------------------------------</li>
+                <li><a href="generated_html_pages/label_missing.html">🚫 Label Missing</a></li>
+                <li><a href="generated_html_pages/label_empty.html">⚠️ Label Empty</a></li>
+                <li><a href="generated_html_pages/label_diff_lang.html">🌍 Label Different Language</a></li>
+                <li class="separator">----------------------------------------</li>
+            </ul>
 
-        <section aria-labelledby="culture">
-            <h2 id="culture">বাংলাদেশের সংস্কৃতি</h2>
-            <p>বাংলাদেশের সংস্কৃতি অত্যন্ত বৈচিত্র্যময় এবং সমৃদ্ধ। বাংলা ভাষা এবং সাহিত্য এই দেশের সংস্কৃতির মূলে অবস্থিত।</p>
-        </section>
-    </main>
+            <h2>Frames & Titles</h2>
+            <ul>
+                <li><a href="generated_html_pages/document-title_missing.html">🚫 Document Title Missing</a></li>
+                <li><a href="generated_html_pages/document-title_empty.html">⚠️ Document Title Empty</a></li>
+                <li><a href="generated_html_pages/document-title_diff_lang.html">🌍 Document Title Different Language</a></li>
+                <li class="separator">----------------------------------------</li>
+                <li><a href="generated_html_pages/frame-title_missing.html">🚫 Frame Title Missing</a></li>
+                <li><a href="generated_html_pages/frame-title_empty.html">⚠️ Frame Title Empty</a></li>
+                <li><a href="generated_html_pages/frame-title_diff_lang.html">🌍 Frame Title Different Language</a></li>
+                <li class="separator">----------------------------------------</li>
+            </ul>
+        </div>
 
-    <figure>
-        <img src="your-image.jpg" alt="A vivid depiction of Bangladesh's cultural diversity, natural beauty, bustling cities, lush greenery, and rivers." role="img">
-        <img src="small-bangladesh-flag-on-a-toothpick-the-flag-has-nicely-detailed-k1d262.jpg" alt="A vivid depiction of Bangladesh's cultural diversity, natural beauty, bustling cities, lush greenery, and rivers, highlighting the vibrant life and traditions of the country."role="img">
-        <figcaption>A vivid depiction of Bangladesh's cultural diversity, natural beauty, bustling cities</figcaption>
-    </figure>
+        <!-- Column 2 -->
+        <div class="column">
+            <h2>Images & Media</h2>
+            <ul>
+                <li><a href="generated_html_pages/image-alt_missing.html">🚫 Image Alt Missing</a></li>
+                <li><a href="generated_html_pages/image-alt_empty.html">⚠️ Image Alt Empty</a></li>
+                <li><a href="generated_html_pages/image-alt_diff_lang.html">🌍 Image Alt Different Language</a></li>
+                <li class="separator">----------------------------------------</li>
+                <li><a href="generated_html_pages/input-image-alt_missing.html">🚫 Input Image Alt Missing</a></li>
+                <li><a href="generated_html_pages/input-image-alt_empty.html">⚠️ Input Image Alt Empty</a></li>
+                <li><a href="generated_html_pages/input-image-alt_diff_lang.html">🌍 Input Image Alt Different Language</a></li>
+                <li class="separator">----------------------------------------</li>
+                <li><a href="generated_html_pages/video-caption_missing.html">🚫 Video Caption Missing</a></li>
+                <li><a href="generated_html_pages/video-caption_empty.html">⚠️ Video Caption Empty</a></li>
+                <li><a href="generated_html_pages/video-caption_diff_lang.html">🌍 Video Caption Different Language</a></li>
+                <li class="separator">----------------------------------------</li>
+            </ul>
 
-    <figure>
-        <img src="shutterstock_1134436058.jpg" alt="Lebhaftes Bild von Bangladeschs Kultur und Natur."role="img">
-        <figcaption>Lebhaftes Bild von Bangladeschs Kultur, Natur und Traditionen.</figcaption>
-    </figure>
+            <h2>Links</h2>
+            <ul>
+                <li><a href="generated_html_pages/link-name_missing.html">🚫 Link Name Missing</a></li>
+                <li><a href="generated_html_pages/link-name_empty.html">⚠️ Link Name Empty</a></li>
+                <li><a href="generated_html_pages/link-name_diff_lang.html">🌍 Link Name Different Language</a></li>
+                <li class="separator">----------------------------------------</li>
+            </ul>
+        </div>
 
-    <form action="https://example.com/form-submit" method="POST" aria-label="Contact Form">
-        <fieldset>
-            <legend>যোগাযোগ করুন</legend>
-            <label for="name">আপনার নাম:</label>
-            <input type="text" id="name" name="name" placeholder="Ihr Name" required aria-required="true">
-            
-            <label for="email">আপনার ইমেইল:</label>
-            <input type="email" id="email" name="email" placeholder="Ihre E-Mail" required aria-required="true">
-            
-            <label for="message">আপনার বার্তা:</label>
-            <textarea id="message" name="message" placeholder="Ihre Nachricht" rows="5" required aria-required="true"></textarea>
-            
-            <button type="submit">পাঠান</button>
-        </fieldset>
-    </form>
+        <!-- Column 3 -->
+        <div class="column">
+            <h2>Interactive Elements</h2>
+            <ul>
+                <li><a href="generated_html_pages/select-name_missing.html">🚫 Select Name Missing</a></li>
+                <li><a href="generated_html_pages/select-name_empty.html">⚠️ Select Name Empty</a></li>
+                <li><a href="generated_html_pages/select-name_diff_lang.html">🌍 Select Name Different Language</a></li>
+                <li class="separator">----------------------------------------</li>
+                <li><a href="generated_html_pages/summary-name_missing.html">🚫 Summary Name Missing</a></li>
+                <li><a href="generated_html_pages/summary-name_empty.html">⚠️ Summary Name Empty</a></li>
+                <li><a href="generated_html_pages/summary-name_diff_lang.html">🌍 Summary Name Different Language</a></li>
+                <li class="separator">----------------------------------------</li>
+            </ul>
 
-    <footer role="contentinfo">
-        <p>এই পৃষ্ঠাটি বাংলাদেশের ঐতিহ্য এবং সংস্কৃতি নিয়ে।</p>
-    </footer>
+            <h2>SVG & Objects</h2>
+            <ul>
+                <li><a href="generated_html_pages/svg-img-alt_missing.html">🚫 SVG Alt Missing</a></li>
+                <li><a href="generated_html_pages/svg-img-alt_empty.html">⚠️ SVG Alt Empty</a></li>
+                <li><a href="generated_html_pages/svg-img-alt_diff_lang.html">🌍 SVG Alt Different Language</a></li>
+                <li class="separator">----------------------------------------</li>
+                <li><a href="generated_html_pages/object-alt_missing.html">🚫 Object Alt Missing</a></li>
+                <li><a href="generated_html_pages/object-alt_empty.html">⚠️ Object Alt Empty</a></li>
+                <li><a href="generated_html_pages/object-alt_diff_lang.html">🌍 Object Alt Different Language</a></li>
+                <li class="separator">----------------------------------------</li>
+            </ul>
+        </div>
+    </div>
+
 </body>
 </html>
