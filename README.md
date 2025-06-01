@@ -30,6 +30,7 @@
 It adds custom checks to evaluate language mismatches between visible content and accessibility metadata.
 
 This tool is designed to support analysis in multilingual environments, especially in non-Latin-script websites.  
+
 ---
 
 ## ⚙️ What It Does
